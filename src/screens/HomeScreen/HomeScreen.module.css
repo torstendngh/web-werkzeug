@@ -1,0 +1,88 @@
+.homeScreen {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 64px 16px;
+  gap: 64px;
+  overflow: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  gap: 16px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #e3e4e7;
+}
+
+.description {
+  color: #a0a0a3;
+}
+
+.grid {
+  margin-top: 32px;
+  display: grid;
+  grid-gap: 16px; /* Adjust the space between items */
+  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+  cursor: pointer;
+  border: 1px solid #1e1e1f;
+  padding: 16px;
+  border-radius: 16px;
+  align-self: flex-start;
+  transition: background-color 0.2s ease;
+}
+
+.profileContainer:hover {
+  background-color:  #1e1e1f;
+}
+
+.profilePic {
+  height: 64px;
+  width: 64px;
+  background-color: red;
+  border-radius: 1000px;
+  overflow: hidden;
+}
+
+.profilePic > img {
+  height: 100%;
+  width: 100%;
+}
+
+.profileTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.profileName {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.profileDescription {
+  font-size: 16px;
+  color: #a0a0a3;
+}

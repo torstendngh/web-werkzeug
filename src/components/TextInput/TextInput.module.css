@@ -1,0 +1,16 @@
+.input {
+  border: 2px solid #1E1E1F;
+  background-color: transparent;
+  padding: 16px;
+  font-family: monospace;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #E3E4E7;
+  width: 100%;
+}
+
+.input:focus,
+.input:active {
+  border: 2px solid #A0A0A3;
+  outline: none;
+}

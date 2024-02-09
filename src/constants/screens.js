@@ -1,0 +1,52 @@
+export default [
+  {
+    label: "Home",
+    description: "",
+    icon: "home",
+    color: "#5D6AFF",
+    path: "/",
+  },
+  {
+    label: "Snippits",
+    description: "Usefull bits of code",
+    icon: "snippits",
+    color: "#6F33F1",
+    path: "/snippits",
+  },
+  {
+    label: "FlexTool",
+    description: "Visual flexbox editor",
+    icon: "flexTool",
+    color: "#B92AFE",
+    path: "/flex-tool",
+  },
+  {
+    label: "ColorAlpha",
+    description: "Make colors transparent without changing them",
+    icon: "colorAlpha",
+    color: "#E63B64",
+    path: "/color-alpha",
+  },
+  {
+    label: "UUID Generator",
+    description: "Generates random UUIDs",
+    icon: "uuidGenerator",
+    color: "#E54D3B",
+    path: "/uuid-generator",
+  },
+  {
+    label: "Tutorials",
+    description: "Tutorials to get started",
+    icon: "tutorials",
+    color: "#EBA800",
+    path: "/tutorials",
+  },
+  {
+    label: "Settings",
+    description: "Customize WebWerkzeug",
+    icon: "settings",
+    color: "#FAFAFA",
+    path: "/settings",
+    style: { marginTop: "auto" },
+  },
+];

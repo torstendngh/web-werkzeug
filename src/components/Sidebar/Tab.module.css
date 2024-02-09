@@ -1,0 +1,31 @@
+.tab {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 8px;
+  color: #A0A0A3;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-right: 24px;
+  flex-shrink: 0;
+}
+
+.tab:hover {
+  background-color: #1E1E1F;
+  color: #E3E4E7;
+}
+
+.isSelected {
+  background-color: #1E1E1F !important;
+  color: #E3E4E7 !important;
+}
+
+.icon {
+  padding: 8px;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

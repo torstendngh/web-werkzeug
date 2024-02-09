@@ -1,0 +1,29 @@
+.button {
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 8px;
+  color: #E3E4E7;
+  background-color: #5A5BFF;
+  cursor: pointer;
+  border-radius: 1000px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.1s ease;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  background-color: #E3E4E7;
+  color: #1E1E1F;
+  transform: translateY(3px);
+}
+
+.button > svg {
+  height: 24px;
+  width: 24px;
+}
