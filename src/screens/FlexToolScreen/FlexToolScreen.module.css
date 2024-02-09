@@ -1,0 +1,87 @@
+.flexToolScreen {
+  flex: 1;
+  display: flex;
+  gap: 16px;
+  overflow: auto;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  background-color: #0f0f10;
+  padding: 16px;
+  gap: 16px;
+  border-left: 1px solid #1e1e1f;
+  overflow: auto;
+}
+
+.code {
+  white-space: pre-wrap;
+  background-color: #1e1e1f;
+  padding: 16px;
+  border-radius: 8px;
+  color: #a0a0a3;
+  font-family: monospace;
+  min-width: 256px;
+  min-height: 128px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 16px;
+}
+
+.display {
+  background-color: #0f0f10;
+  border-radius: 8px;
+  padding: 4px;
+  gap: 4px;
+  border: 1px solid #1e1e1f;
+  width: 256px;
+  height: 256px;
+}
+
+.display > div {
+  border-radius: 4px;
+  background-color: #1e1e1f;
+  min-height: 32px;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.display > div:nth-child(1) {
+  background-color: #5D6AFF1A;
+  color: #5D6AFF;
+  box-shadow: 0 0 0 1px #5D6AFF inset;
+}
+
+.display > div:nth-child(2) {
+  background-color: #6F33F11A;
+  color: #6F33F1;
+  box-shadow: 0 0 0 1px #6F33F1 inset;
+}
+
+.display > div:nth-child(3) {
+  background-color: #B92AFE1A;
+  color: #B92AFE;
+  box-shadow: 0 0 0 1px #B92AFE inset;
+}
+
+.display > div:nth-child(4) {
+  background-color: #E63B641A;
+  color: #E63B64;
+  box-shadow: 0 0 0 1px #E63B64 inset;
+}
+
+.display > div:nth-child(5) {
+  background-color: #E54D3B1A;
+  color: #E54D3B;
+  box-shadow: 0 0 0 1px #E54D3B inset;
+}

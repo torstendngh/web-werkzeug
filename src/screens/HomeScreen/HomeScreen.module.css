@@ -35,7 +35,7 @@
 
 .grid {
   display: grid;
-  grid-gap: 16px; /* Adjust the space between items */
+  grid-gap: 16px;
   grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
 }
 
@@ -50,6 +50,12 @@
   border-radius: 16px;
   align-self: flex-start;
   transition: background-color 0.2s ease;
+}
+
+@media (max-width: 960px) {
+  .profileContainer {
+    align-self: center;
+  }
 }
 
 .profileContainer:hover {
@@ -98,11 +104,10 @@
   align-items: center;
   justify-content: center;
   padding: 16px;
-  background-color: #0f0f10;
-  background: linear-gradient(to left, #E54D3B1A, #6F33F11A);
+  background-color: #EBA8001A;
   margin-top: 16px;
   gap: 8px;
   font-size: 18px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.75);
+  color: #EBA800;
 }

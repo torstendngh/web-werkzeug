@@ -7,6 +7,7 @@ import AppLayout from './screens/AppLayout/AppLayout'
 import NotFoundScreen from './screens/NotFoundScreen/NotFoundScreen'
 import snippitCategories from './constants/snippits'
 import SnippitsList from './screens/SnippitsScreen/SnippitsList'
+import FlexToolScreen from './screens/FlexToolScreen/FlexToolScreen'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           }
         </Route>
         <Route path='/uuid-generator' element={<UUIDGeneratorScreen/>}/>
+        <Route path='/flex-tool' element={<FlexToolScreen/>}/>
       </Route>
     </Routes>
   )
