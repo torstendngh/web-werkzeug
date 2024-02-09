@@ -17,6 +17,10 @@ const HomeScreen = () => {
             This is WebWerkzeug.com, a collection of tools to help
             Web-Developers
           </span>
+          <div className={styles.notification}>
+            <Icon icon={"warning"}/>
+            Under Development
+          </div>
           <div className={styles.grid}>
             {tiles.slice(1).map((tile, index) => (
               <Tile

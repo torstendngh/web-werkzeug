@@ -4,7 +4,7 @@ export default [
     description: "",
     icon: "home",
     color: "#5D6AFF",
-    path: "/",
+    path: "/home",
   },
   {
     label: "Snippits",

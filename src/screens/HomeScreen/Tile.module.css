@@ -10,6 +10,7 @@
   padding: 16px;
   position: relative;
   transition: border 0.2s ease;
+  background-color: #0f0f10;
 }
 
 .tile:hover::before {
@@ -34,7 +35,7 @@
     var(--glowColor),
     transparent 50%
   );
-  z-index: -1;
+  z-index: 0;
 }
 
 .tile:hover {

@@ -1,15 +1,21 @@
-import Icon from '../Icon/Icon'
-import styles from './Tab.module.css'
+import { NavLink } from "react-router-dom";
+import Icon from "../Icon/Icon";
+import styles from "./Tab.module.css";
 
-const Tab = ({onClick, isSelected = false, children, icon, iconColor, style}) => {
+const Tab = ({ tab }) => {
   return (
-    <button className={`${styles.tab} ${isSelected ? styles.isSelected : ""}`} onClick={onClick} style={style}>
-        <div className={styles.icon} style={{color: iconColor}}>
-            <Icon icon={icon}/>
-        </div>
-        {children}
-    </button>
-  )
-}
+    <NavLink
+      to={tab.path}
+      className={({ isActive }) =>
+        isActive ? `${styles.isSelected} ${styles.tab}` : styles.tab
+      }
+    >
+      <div className={styles.icon} style={{ color: tab.color }}>
+        <Icon icon={tab.icon} />
+      </div>
+      {tab.label}
+    </NavLink>
+  );
+};
 
-export default Tab
+export default Tab;
