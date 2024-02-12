@@ -7,6 +7,7 @@ export default [
     snippets: [
       {
         title: "CSS Reset",
+        language: "css",
         description:
           "This CSS snippet is a modern reset style sheet aimed at removing default browser styling to ensure consistency across different browsers and devices. It starts by removing all default styles except for the display property for most elements, ensuring a clean slate. It sets box-sizing to border-box for all elements, making layout design more intuitive. The snippet also removes list styles, prevents images from exceeding their containers, ensures tables have no spacing between cells, and fixes a specific issue with textarea white-space handling in Safari.",
         code: `/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
@@ -49,6 +50,7 @@ textarea {
       },
       {
         title: "Font Face",
+        language: "css",
         description:
           'This CSS @font-face rule is used to declare a custom font within a webpage. The font-family "Name" serves as a placeholder and should be replaced with the actual name you want to assign to the custom font. The src attribute points to the location of the font file, which is currently set as "/", indicating that the actual URL path to the font file needs to be specified for proper use. This setup allows web designers to incorporate unique typography into their designs by referencing this custom font in other CSS selectors through the font-family property.',
         code: `@font-face {
@@ -58,6 +60,7 @@ textarea {
       },
       {
         title: "Center Container",
+        language: "css",
         description:
           'These CSS properties are used to style an element with a maximum width and center it horizontally within its parent. The max-width is set to "600px", which is a placeholder and can be adjusted to any desired width. The width is set to "100%", ensuring the element stretches to fill its parent up to the maximum specified width. The margin: 0 auto; declaration applies a top and bottom margin of 0 and automatically calculates left and right margins to center the element within its container.',
         code: `margin: 0 auto;
@@ -66,6 +69,7 @@ width: 100%;`,
       },
       {
         title: "Modern Custom Scrollbar",
+        language: "css",
         description:
           "This CSS code styles the scrollbar for webkit-based browsers. It sets the scrollbar width to 20px, makes the track transparent, and colors the thumb dark with rounded corners and internal padding. On hover, the thumb color lightens, creating a modern scrollbar appearance.",
         code: `::-webkit-scrollbar {
@@ -97,6 +101,7 @@ width: 100%;`,
     snippets: [
       {
         title: "UUID generator",
+        language: "javascript",
         description:
           "The uuidv4 function generates a version 4 UUID, a universally unique identifier, using a specific format and random values. It starts with a template string and replaces certain characters with random hexadecimal values, ensuring the result follows the UUID v4 standard. This is achieved by using the crypto.getRandomValues method to generate random numbers and manipulating those to fit the UUID format constraints.",
         code: `const uuidv4 = () => {
@@ -110,6 +115,7 @@ width: 100%;`,
       },
       {
         title: "Time Since",
+        language: "javascript",
         description:
           'The timeSince function calculates the time elapsed since a given date and returns it as a string. If the elapsed time is more than three days, it formats the date and returns it. For periods less than that, it returns the elapsed time in days, hours, or minutes as appropriate. If the elapsed time is less than a minute, it returns "Just now."',
         code: `const timeSince = (dateString) => {
@@ -147,6 +153,7 @@ width: 100%;`,
       },
       {
         title: "Random Range",
+        language: "javascript",
         description:
           "This JavaScript function getRandomNumberInRange generates a random integer within a given range, including both the minimum and maximum values. It uses Math.random for the random number, scales it to the range, and rounds down to ensure it's an integer within the range.",
         code: `const getRandomNumberInRange = (min, max) => {
@@ -155,6 +162,7 @@ width: 100%;`,
       },
       {
         title: "Debounce",
+        language: "javascript",
         description:
           "This JavaScript function debounce creates a debounced version of a given callback function, ensuring it's only executed after a specified delay in milliseconds since the last call. It clears any previous timeout to prevent earlier invocations and sets a new timeout with the delay, calling the callback with all arguments passed to the debounced function.",
         code: `const debounce = (callback, time) => {
@@ -177,6 +185,7 @@ width: 100%;`,
     snippets: [
       {
         title: "SVG Icon Component",
+        language: "javascript",
         description:
           'Stores SVG icons so the can be written "<Icon icon={"iconName"}\\>"',
         code: `const Icon = ({ icon }) => {
@@ -193,6 +202,7 @@ export default Icon;`,
       },
       {
         title: "useCursorPosition",
+        language: "javascript",
         description:
           "This React hook, useCursorPosition, tracks the user's cursor position on the screen. It initializes state with cursorPosition set to null values for x and y. Using useEffect, it adds an event listener for mousemove to update cursorPosition with the cursor's current screen coordinates. The cleanup function removes the event listener to prevent memory leaks. The hook returns the current cursor position, allowing components to access and use these coordinates.",
         code: `import { useState, useEffect } from 'react';

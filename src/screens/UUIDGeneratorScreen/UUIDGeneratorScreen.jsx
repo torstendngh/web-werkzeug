@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Button from "../../components/Button/Button";
-import TextInput from "../../components/TextInput/TextInput";
 import styles from "./UUIDGeneratorScreen.module.css";
 import Icon from "../../components/Icon/Icon";
 
 const UUIDGeneratorScreen = () => {
   const [uuid, setUuid] = useState("");
 
-  // Function to generate a new UUID and set it to state
   const generateUUID = () => {
     const newUuid = uuidv4();
     setUuid(newUuid);
@@ -38,13 +35,17 @@ const UUIDGeneratorScreen = () => {
   return (
     <div className={styles.uuidGenerator}>
       <div className={styles.inputContainer}>
-        <button onClick={generateUUID}>
-          <Icon icon={"refresh"}/>
-        </button>
         <span className={styles.uuid}>{uuid}</span>
-        <button onClick={copyToClipboard}>
-          <Icon icon={"copyToClipboard"}/>
-        </button>
+        <div className={styles.buttonContainer}>
+          <button className={styles.button} onClick={generateUUID}>
+            <Icon icon={"refresh"} />
+            New
+          </button>
+          <button className={styles.button} onClick={copyToClipboard}>
+            <Icon icon={"copyToClipboard"} />
+            Copy to Clipboard
+          </button>
+        </div>
       </div>
     </div>
   );

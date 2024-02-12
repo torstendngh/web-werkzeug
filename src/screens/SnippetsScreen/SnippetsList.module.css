@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 700px;
   width: 100%;
   gap: 16px;
 }
@@ -20,15 +20,6 @@
   font-size: 32px;
   font-family: "Inter SemiBold";
   color: #e3e4e7;
-}
-
-.code {
-  white-space: pre-wrap;
-  background-color: #1e1e1f;
-  padding: 16px;
-  border-radius: 8px;
-  color: #a0a0a3;
-  font-family: monospace;
 }
 
 .description {

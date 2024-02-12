@@ -1,5 +1,6 @@
 import styles from "./SnippetsList.module.css";
-import Button from '../../components/Button/Button'
+import Button from "../../components/Button/Button";
+import Code from "../../components/Code/Code";
 
 const SnippetsList = ({ snippets }) => {
   const copyToClipboard = (string) => {
@@ -18,7 +19,7 @@ const SnippetsList = ({ snippets }) => {
           >
             Copy to Clipboard
           </Button>
-          <span className={styles.code}>{snippet.code}</span>
+          <Code language={snippet.language}>{snippet.code}</Code>
         </div>
       ))}
     </div>

@@ -9,35 +9,60 @@
 
 .inputContainer {
   display: flex;
-  align-items: stretch;
-  justify-content: center;
-  background-color: #1e1e1f;
-  border-radius: 12px;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #1e1e1f;
+  background-color: #0f0f10;
+  padding: 16px;
+  border-radius: 16px;
 }
 
-.inputContainer > button {
+.button {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px;
-  margin: 4px;
+  gap: 8px;
   cursor: pointer;
   border-radius: 8px;
+  background-color: #1e1e1f;
+  flex: 1;
+  font-family: "Inter Medium";
+  flex-shrink: 0;
 }
 
-.inputContainer > button:hover {
+.button:hover {
   background-color: #2b2b2d;
 }
 
 .uuid {
-  background-color: #0b0b0c;
-  padding: 0 16px;
-  font-family: monospace;
+  padding: 16px;
+  font-family: "Mono";
   border-radius: 8px;
   font-size: 18px;
-  margin: 4px 0;
   color: #e3e4e7;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #1e1e1f;
+  background-color: #0b0b0c;
+  text-align: center;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+    flex-wrap: wrap;
+  }
 }

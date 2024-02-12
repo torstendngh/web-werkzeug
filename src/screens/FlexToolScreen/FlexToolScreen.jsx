@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./FlexToolScreen.module.css";
 import Tabs from "./Tabs";
 import Button from "../../components/Button/Button";
+import Code from "../../components/Code/Code";
 
 const flexboxAttributes = [
   {
@@ -233,7 +234,9 @@ const FlexToolScreen = () => {
             },
           ]}
         /> */}
-        <div className={styles.code}>{selectedAttributesCSS}</div>
+        <Code language={"css"}>
+          {selectedAttributesCSS}
+        </Code>
         <button className={styles.smallButton} onClick={() => setShowLabels(x => !x)}>{showLabels ? "Hide Labels" : "Show Labels"}</button>
       </div>
     </div>

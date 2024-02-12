@@ -1,0 +1,9 @@
+.code {
+  white-space: pre-wrap;
+  background-color: #1e1e1f;
+  padding: 16px;
+  border-radius: 8px;
+  color: #a0a0a3;
+  font-family: "Mono";
+  font-size: 14px;
+}

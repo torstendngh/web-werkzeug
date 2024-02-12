@@ -43,6 +43,11 @@ body {
   src: url("./assets/fonts/Inter-SemiBold.ttf");
 }
 
+@font-face {
+  font-family: "Mono";
+  src: url("./assets/fonts/IBMPlexMono-Medium.ttf");
+}
+
 /* Scrollbar */
 
 ::-webkit-scrollbar {
