@@ -8,7 +8,7 @@ Wekzeug (German): "Tools"
 
 ## Features
 
-- ✂️ Snippits for React, CSS and JavaScript
+- ✂️ Snippets for React, CSS and JavaScript
 - 💪 FlexTool: a visual flexbox editor based on [my old flexbox editor](https://torstendngh.github.io/flextool2/) (Coming soon)
 - 🔢 UUID Generator
 - 🎓 Tutorials (Coming soon)

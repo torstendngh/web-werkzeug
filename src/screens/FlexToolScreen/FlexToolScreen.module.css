@@ -15,6 +15,7 @@
   margin: 16px;
   margin-left: 0;
   border-radius: 16px;
+  flex-shrink: 0;
 }
 
 .code {

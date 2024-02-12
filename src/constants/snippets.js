@@ -4,7 +4,7 @@ export default [
     icon: "css",
     color: "#2965f1",
     path: "css",
-    snippits: [
+    snippets: [
       {
         title: "CSS Reset",
         description:
@@ -94,7 +94,7 @@ width: 100%;`,
     icon: "javascript",
     color: "#F7DF1E",
     path: "javascript",
-    snippits: [
+    snippets: [
       {
         title: "UUID generator",
         description:
@@ -174,7 +174,7 @@ width: 100%;`,
     icon: "react",
     color: "#61dafb",
     path: "react",
-    snippits: [
+    snippets: [
       {
         title: "SVG Icon Component",
         description:

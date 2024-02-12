@@ -1,28 +1,28 @@
-import styles from "./SnippitsList.module.css";
+import styles from "./SnippetsList.module.css";
 import Button from '../../components/Button/Button'
 
-const SnippitsList = ({ snippits }) => {
+const SnippetsList = ({ snippets }) => {
   const copyToClipboard = (string) => {
     navigator.clipboard.writeText(string);
   };
   return (
     <div className={styles.body}>
-      {snippits.map((snippit, index) => (
+      {snippets.map((snippet, index) => (
         <div className={styles.container} key={index}>
-          <h1 className={styles.title}>{snippit.title}</h1>
-          <span className={styles.description}>{snippit.description}</span>
+          <h1 className={styles.title}>{snippet.title}</h1>
+          <span className={styles.description}>{snippet.description}</span>
           <Button
             icon={"copyToClipboard"}
             style={{ alignSelf: "flex-start" }}
-            onClick={() => copyToClipboard(snippit.code)}
+            onClick={() => copyToClipboard(snippet.code)}
           >
             Copy to Clipboard
           </Button>
-          <span className={styles.code}>{snippit.code}</span>
+          <span className={styles.code}>{snippet.code}</span>
         </div>
       ))}
     </div>
   );
 };
 
-export default SnippitsList;
+export default SnippetsList;

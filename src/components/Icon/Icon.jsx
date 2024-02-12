@@ -102,7 +102,7 @@ const Icon = ({ icon, style }) => {
         <path d="M12 22V12" />
       </svg>
     ),
-    snippits: (
+    snippets: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"

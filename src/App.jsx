@@ -1,11 +1,11 @@
-import SnippitsScreen from './screens/SnippitsScreen/SnippitsScreen'
+import SnippetsScreen from './screens/SnippetsScreen/SnippetsScreen'
 import UUIDGeneratorScreen from './screens/UUIDGeneratorScreen/UUIDGeneratorScreen'
 import HomeScreen from './screens/HomeScreen/HomeScreen'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import AppLayout from './screens/AppLayout/AppLayout'
 import NotFoundScreen from './screens/NotFoundScreen/NotFoundScreen'
-import snippitCategories from './constants/snippits'
-import SnippitsList from './screens/SnippitsScreen/SnippitsList'
+import snippetCategories from './constants/snippets'
+import SnippetsList from './screens/SnippetsScreen/SnippetsList'
 import FlexToolScreen from './screens/FlexToolScreen/FlexToolScreen'
 import IconsScreen from './screens/IconsScreen/IconsScreen'
 
@@ -16,10 +16,10 @@ const App = () => {
         <Route index element={<Navigate to="/home" replace={true} />} />
         <Route path='*' element={<NotFoundScreen/>}/>
         <Route path='/home' element={<HomeScreen/>}/>
-        <Route path='/snippits' element={<SnippitsScreen/>}>
-          <Route index element={<Navigate to={snippitCategories[0].path} replace={true} />} />
+        <Route path='/snippets' element={<SnippetsScreen/>}>
+          <Route index element={<Navigate to={snippetCategories[0].path} replace={true} />} />
           {
-            snippitCategories.map((category, index) => <Route key={index} path={category.path} element={<SnippitsList snippits={category.snippits}/>}/>)
+            snippetCategories.map((category, index) => <Route key={index} path={category.path} element={<SnippetsList snippets={category.snippets}/>}/>)
           }
         </Route>
         <Route path='/uuid-generator' element={<UUIDGeneratorScreen/>}/>

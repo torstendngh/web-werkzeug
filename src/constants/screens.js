@@ -7,11 +7,11 @@ export default [
     path: "/home",
   },
   {
-    label: "Snippits",
+    label: "Snippets",
     description: "Usefull bits of code",
-    icon: "snippits",
+    icon: "snippets",
     color: "#6F33F1",
-    path: "/snippits",
+    path: "/snippets",
   },
   {
     label: "FlexTool",
