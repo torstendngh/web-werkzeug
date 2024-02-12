@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import TabBar from "../../components/TabBar/TabBar";
 import styles from "./SnippitsScreen.module.css";
 import tabs from "../../constants/snippits.js";

@@ -1,6 +1,6 @@
 .tabBar {
   display: flex;
-  padding: 8px;
+  padding: 8px 0;
   gap: 8px;
   overflow-y: hidden;
   overflow-x: auto;

@@ -216,5 +216,5 @@ const useCursorPosition = () => {
 };`,
       },
     ],
-  },
+  }
 ];
