@@ -47,10 +47,24 @@ const Tile = ({ tile, onClick }) => {
             {tile.amount}
           </div>
           {
+            !!tile.hasStrokeWidth &&
+            <div className={styles.detailContainer}>
+              <Icon icon={"hasStrokeWidth"}/>
+              Custom Stroke
+            </div>
+          }
+          {
             !!tile.hasResize &&
             <div className={styles.detailContainer}>
               <Icon icon={"canResize"}/>
-              Has resize options
+              Custom Size
+            </div>
+          }
+          {
+            !!tile.hasColor &&
+            <div className={styles.detailContainer}>
+              <Icon icon={"hasColor"}/>
+              Custom Color
             </div>
           }
         </div>

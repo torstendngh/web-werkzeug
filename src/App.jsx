@@ -1,6 +1,5 @@
 import SnippitsScreen from './screens/SnippitsScreen/SnippitsScreen'
 import UUIDGeneratorScreen from './screens/UUIDGeneratorScreen/UUIDGeneratorScreen'
-import ColorAlphaScreen from './screens/ColorAlphaScreen/ColorAlphaScreen'
 import HomeScreen from './screens/HomeScreen/HomeScreen'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import AppLayout from './screens/AppLayout/AppLayout'
@@ -17,7 +16,6 @@ const App = () => {
         <Route index element={<Navigate to="/home" replace={true} />} />
         <Route path='*' element={<NotFoundScreen/>}/>
         <Route path='/home' element={<HomeScreen/>}/>
-        <Route path='/color-alpha' element={<ColorAlphaScreen/>}/>
         <Route path='/snippits' element={<SnippitsScreen/>}>
           <Route index element={<Navigate to={snippitCategories[0].path} replace={true} />} />
           {

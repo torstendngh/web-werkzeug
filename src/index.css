@@ -26,6 +26,25 @@ body {
   flex-direction: column;
 }
 
+/* Fonts */
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter Medium";
+  src: url("./assets/fonts/Inter-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Inter SemiBold";
+  src: url("./assets/fonts/Inter-SemiBold.ttf");
+}
+
+/* Scrollbar */
+
 ::-webkit-scrollbar {
   width: 20px;
 }

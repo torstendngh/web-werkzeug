@@ -4,12 +4,14 @@ import Tab from "./Tab";
 import Icon from "../Icon/Icon";
 import tabs from '../../constants/screens'
 import { useNavigate } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 
 const Sidebar = () => {
 
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 960);
 
   const navigate = useNavigate()
+  const location = useLocation();
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,7 +34,7 @@ const Sidebar = () => {
             tab={tab}
           />
         ))}
-      {!isWideScreen && (
+      {(!isWideScreen && location.pathname !== '/home') && (
         <button className={styles.menuButton} onClick={() => navigate("/")}>
           <Icon icon={"home"} />
         </button>

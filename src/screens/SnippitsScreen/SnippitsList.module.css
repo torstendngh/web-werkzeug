@@ -19,7 +19,7 @@
 
 .title {
   font-size: 32px;
-  font-weight: 600;
+  font-family: "Inter SemiBold";
   color: #e3e4e7;
 }
 
@@ -34,4 +34,5 @@
 
 .description {
   color: #a0a0a3;
+  line-height: 1.5;
 }

@@ -39,7 +39,6 @@
 }
 
 .tile:hover {
-  /* background-color: #1e1e1f; */
   border: 1px solid var(--borderColor);
 }
 
@@ -50,6 +49,9 @@
   }
   .tile::before {
     background: none;
+  }
+  .tile:hover {
+    border: 0px solid var(--borderColor);
   }
 }
 
@@ -70,7 +72,7 @@
 .title {
   margin-top: auto;
   font-size: 24px;
-  font-weight: 600;
+  font-family: "Inter SemiBold";
   color: #e3e4e7;
 }
 
