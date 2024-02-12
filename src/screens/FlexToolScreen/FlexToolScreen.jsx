@@ -139,6 +139,7 @@ const flexboxAttributes = [
 const FlexToolScreen = () => {
   const [selectedAttributes, setSelectedAttributes] = useState([]);
   const [selectedAttributesCSS, setSelectedAttributesCSS] = useState([]);
+  const [showLabels, setShowLabels] = useState(true)
 
   const handleSelect = (attributeCSS, selectedValue) => {
     setSelectedAttributes((prevSelectedAttributes) => {
@@ -200,7 +201,7 @@ const FlexToolScreen = () => {
             <div>5</div>
             <style>{`.${styles.display} { ${selectedAttributesCSS} }`}</style>
         </div>
-        <div className={styles.code}>{selectedAttributesCSS}</div>
+        
         <Button onClick={() => copyToClipboard(selectedAttributesCSS)}>Copy to Cliboard</Button>
       </div>
 
@@ -208,15 +209,15 @@ const FlexToolScreen = () => {
         {flexboxAttributes.map((attribute, index) => (
           <Tabs
             key={index}
-            label={attribute.css}
+            label={showLabels ? attribute.css : undefined}
             tabs={attribute.values}
             onChange={(selectedValue) =>
               handleSelect(attribute.css, selectedValue)
             }
           />
         ))}
-        <Tabs
-          label={"Style"}
+        {/* <Tabs
+          label={showLabels ?"Style": undefined}
           tabs={[
             {
               name: "Only necessary",
@@ -231,7 +232,9 @@ const FlexToolScreen = () => {
               icon: "codeModern",
             },
           ]}
-        />
+        /> */}
+        <div className={styles.code}>{selectedAttributesCSS}</div>
+        <button className={styles.smallButton} onClick={() => setShowLabels(x => !x)}>{showLabels ? "Hide Labels" : "Show Labels"}</button>
       </div>
     </div>
   );

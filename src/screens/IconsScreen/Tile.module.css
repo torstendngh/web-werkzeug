@@ -14,8 +14,8 @@
 }
 
 .tile:hover::before {
-    opacity: 1;
-  }
+  opacity: 1;
+}
 
 .tile::before {
   border-radius: inherit;
@@ -65,6 +65,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
+  gap: 8px;
 }
 
 .title {
@@ -77,4 +78,23 @@
 .description {
   font-size: 16px;
   color: #a0a0a3;
+}
+
+.detailsContainer {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.detailContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 8px;
+  padding-right: 12px;
+  border-radius: 8px;
 }

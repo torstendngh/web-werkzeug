@@ -8,8 +8,12 @@
   border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
-  padding-right: 24px;
+  
   flex-shrink: 0;
+}
+
+.label {
+  padding-right: 24px;
 }
 
 .tab:hover {
@@ -28,4 +32,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.isNew {
+  margin-left: auto;
+  padding: 2px 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  font-size: 12px;
+  align-self: center;
 }

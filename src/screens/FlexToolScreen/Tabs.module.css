@@ -4,7 +4,7 @@
   border-radius: 8px;
   padding: 4px;
   gap: 4px;
-  overflow: hidden;
+  overflow: auto;
   border: 1px solid #1e1e1f;
 }
 

@@ -19,6 +19,7 @@ export default [
     icon: "flexTool",
     color: "#B92AFE",
     path: "/flex-tool",
+    isNew: true
   },
   {
     label: "ColorAlpha",
@@ -40,6 +41,14 @@ export default [
     icon: "tutorials",
     color: "#EBA800",
     path: "/tutorials",
+  },
+  {
+    label: "Icons",
+    description: "Free SVG icon sources",
+    icon: "icons",
+    color: "#F1E100",
+    path: "/icons",
+    isNew: true
   },
   {
     label: "Settings",

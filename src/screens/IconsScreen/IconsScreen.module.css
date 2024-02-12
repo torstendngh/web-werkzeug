@@ -1,0 +1,40 @@
+.iconsScreen {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: auto;
+  padding: 64px 16px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 16px;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #e3e4e7;
+}
+
+.description {
+  color: #a0a0a3;
+}

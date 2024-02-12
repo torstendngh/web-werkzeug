@@ -14,7 +14,13 @@ const Tab = ({ tab }) => {
       <div className={styles.icon} style={{ color: tab.color }}>
         <Icon icon={tab.icon} />
       </div>
-      {tab.label}
+      <span className={styles.label}>
+        {tab.label}
+      </span>
+      {
+        !!tab.isNew &&
+        <span className={styles.isNew}>New</span>
+      }
     </NavLink>
   );
 };

@@ -2,7 +2,7 @@ import styles from "./Tabs.module.css";
 import { useEffect, useState } from "react";
 import Icon from "../../components/Icon/Icon"
 
-const Tabs = ({ tabs, iconRotation = 0, onChange = () => null, selectedIndex, label }) => {
+const Tabs = ({ tabs, iconRotation = 0, onChange = () => null, selectedIndex, label = undefined }) => {
   const [selected, setSelected] = useState(selectedIndex || 0);
 
   const handleClick = (index) => {
@@ -17,7 +17,10 @@ const Tabs = ({ tabs, iconRotation = 0, onChange = () => null, selectedIndex, la
 
   return (
     <div className={styles.tabsContainer}>
+      {
+        !!label &&
         <span className={styles.label}>{label}: <span className={styles.value}>{!!tabs[selected]?.css ? tabs[selected].css + ";" : tabs[selected].name}</span></span>
+      }
         <div className={styles.tabs}>
         {tabs.map((tab, index) => (
             <button
