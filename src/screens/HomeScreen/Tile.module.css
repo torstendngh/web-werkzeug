@@ -69,6 +69,11 @@
   margin-bottom: 16px;
 }
 
+.icon svg {
+  height: 42px;
+  width: 42px;
+}
+
 .title {
   margin-top: auto;
   font-size: 24px;
