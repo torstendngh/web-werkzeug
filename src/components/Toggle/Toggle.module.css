@@ -1,0 +1,28 @@
+.toggle {
+  height: 32px;
+  width: 64px;
+  border-radius: 1000px;
+  background-color: var(--color-gray-6);
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle.isActive {
+  background-color: #64D82A;
+}
+
+.toggle > div {
+  height: 28px;
+  width: 28px;
+  border-radius: 1000px;
+  background-color: var(--color-bg);
+  position: absolute;
+  top: 2px;
+  bottom: 20px;
+  left: 2px;
+}
+
+.toggle.isActive > div {
+  left: 34px;
+  background-color: white;
+}

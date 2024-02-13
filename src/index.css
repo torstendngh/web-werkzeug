@@ -1,13 +1,13 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-  color: #e3e4e7;
-  background-color: #0b0b0c;
-
+  color: var(--color-gray-1);
+  background-color: var(--color-bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "zero" 1;
 }
 
 body {
@@ -45,7 +45,8 @@ body {
 
 @font-face {
   font-family: "Mono";
-  src: url("./assets/fonts/IBMPlexMono-Medium.ttf");
+  src: url("./assets/fonts/JetBrainsMono-Medium.woff2") format("woff2"),
+    url("./assets/fonts/JetBrainsMono-Medium.ttf") format("truetype");
 }
 
 /* Scrollbar */
@@ -59,14 +60,14 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #1E1E1F;
+  background-color: var(--color-gray-4);
   border-radius: 20px;
   border: 6px solid transparent;
   background-clip: content-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #A0A0A3;
+  background-color: var(--color-gray-1);
 }
 
 /*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
@@ -88,7 +89,8 @@ body {
   Remove list styles (bullets/numbers)
   in case you use it with normalize.css
 */
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 

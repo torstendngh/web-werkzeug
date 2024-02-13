@@ -16,7 +16,7 @@
 }
 .hljs-comment,
 .hljs-quote {
-  color: #48484a;
+  color: var(--color-gray-3);
 }
 .hljs-meta {
   color: #5D6AFF;

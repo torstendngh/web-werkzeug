@@ -11,8 +11,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  border: 1px solid #1e1e1f;
-  background-color: #0f0f10;
+  border: 1px solid var(--color-gray-5);
+  background-color: var(--color-gray-6);
   padding: 16px;
   border-radius: 16px;
 }
@@ -25,14 +25,16 @@
   gap: 8px;
   cursor: pointer;
   border-radius: 8px;
-  background-color: #1e1e1f;
+  background-color: var(--color-gray-5);
+  color: var(--color-gray-1);
   flex: 1;
   font-family: "Inter Medium";
   flex-shrink: 0;
 }
 
 .button:hover {
-  background-color: #2b2b2d;
+  background-color: var(--color-gray-4);
+  color: var(--color-gray-0);
 }
 
 .uuid {
@@ -40,12 +42,12 @@
   font-family: "Mono";
   border-radius: 8px;
   font-size: 18px;
-  color: #e3e4e7;
+  color: var(--color-gray-0);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #1e1e1f;
-  background-color: #0b0b0c;
+  border: 1px solid var(--color-gray-5);
+  background-color: var(--color-gray-6);
   text-align: center;
 }
 

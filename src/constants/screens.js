@@ -41,6 +41,7 @@ export default [
     icon: "tutorials",
     color: "#EBA800",
     path: "/tutorials",
+    isNew: true
   },
   {
     label: "Icons",
@@ -54,7 +55,7 @@ export default [
     label: "Settings",
     description: "Customize WebWerkzeug",
     icon: "settings",
-    color: "#FAFAFA",
+    color: "#8E8E93",
     path: "/settings",
     style: { marginTop: "auto" },
   },

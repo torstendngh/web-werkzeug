@@ -1,0 +1,77 @@
+.tutorialScreen {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 64px 16px;
+  gap: 64px;
+  overflow: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 700px;
+  width: 100%;
+  gap: 16px;
+}
+
+.title {
+  font-size: 32px;
+  font-family: "Inter SemiBold";
+  color: var(--color-gray-0);
+  margin: 32px 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-family: "Inter SemiBold";
+  color: var(--color-gray-0);
+  margin-top: 32px;
+}
+
+.text {
+  color: var(--color-gray-1);
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Inter";
+}
+
+.star {
+  color: var(--color-gray-0);
+}
+
+.listItem {
+  color: var(--color-gray-1);
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Inter";
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: normal;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  gap: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: var(--color-gray-5);
+  color: var(--color-gray-1);
+  flex: 1;
+  font-family: "Inter Medium";
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.backButton:hover {
+  background-color: var(--color-gray-4);
+  color: var(--color-gray-0);
+}

@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom"
 const AppLayout = () => {
   return (
     <div className={styles.appLayout}>
+      <div className="topPageBlur"></div>
       <Sidebar/>
       <Outlet />
     </div>

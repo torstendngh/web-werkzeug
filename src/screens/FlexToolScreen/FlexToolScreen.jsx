@@ -3,6 +3,7 @@ import styles from "./FlexToolScreen.module.css";
 import Tabs from "./Tabs";
 import Button from "../../components/Button/Button";
 import Code from "../../components/Code/Code";
+import Icon from "../../components/Icon/Icon";
 
 const flexboxAttributes = [
   {
@@ -140,7 +141,22 @@ const flexboxAttributes = [
 const FlexToolScreen = () => {
   const [selectedAttributes, setSelectedAttributes] = useState([]);
   const [selectedAttributesCSS, setSelectedAttributesCSS] = useState([]);
-  const [showLabels, setShowLabels] = useState(true)
+  const [showLabels, setShowLabels] = useState(true);
+
+  const getDefaultSelectedAttributes = () => {
+    return flexboxAttributes.flatMap((attr) =>
+      attr.values
+        .filter((value) => value.isDefault)
+        .map((value) => ({
+          attribute: attr.css,
+          value: value.css,
+        }))
+    );
+  };
+
+  useEffect(() => {
+    setSelectedAttributes(getDefaultSelectedAttributes());
+  }, []);
 
   const handleSelect = (attributeCSS, selectedValue) => {
     setSelectedAttributes((prevSelectedAttributes) => {
@@ -190,20 +206,32 @@ const FlexToolScreen = () => {
     navigator.clipboard.writeText(string);
   };
 
+  const getSelectedValueForAttribute = (attributeCSS) => {
+    const attribute = selectedAttributes.find(
+      (attr) => attr.attribute === attributeCSS
+    );
+    return attribute ? attribute.value : null;
+  };
+
+  const reset = () => {
+    setSelectedAttributes(getDefaultSelectedAttributes());
+  };
+
   return (
     <div className={styles.flexToolScreen}>
-
       <div className={styles.center}>
         <div className={styles.display}>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <style>{`.${styles.display} { ${selectedAttributesCSS} }`}</style>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <style>{`.${styles.display} { ${selectedAttributesCSS} }`}</style>
         </div>
-        
-        <Button onClick={() => copyToClipboard(selectedAttributesCSS)}>Copy to Cliboard</Button>
+
+        <Button onClick={() => copyToClipboard(selectedAttributesCSS)}>
+          Copy to Cliboard
+        </Button>
       </div>
 
       <div className={styles.controls}>
@@ -212,6 +240,7 @@ const FlexToolScreen = () => {
             key={index}
             label={showLabels ? attribute.css : undefined}
             tabs={attribute.values}
+            selectedValue={getSelectedValueForAttribute(attribute.css)}
             onChange={(selectedValue) =>
               handleSelect(attribute.css, selectedValue)
             }
@@ -234,10 +263,29 @@ const FlexToolScreen = () => {
             },
           ]}
         /> */}
-        <Code language={"css"}>
-          {selectedAttributesCSS}
-        </Code>
-        <button className={styles.smallButton} onClick={() => setShowLabels(x => !x)}>{showLabels ? "Hide Labels" : "Show Labels"}</button>
+        <Code language={"css"}>{selectedAttributesCSS}</Code>
+        <div className={styles.smallButtonContainer}>
+          <button
+            className={styles.smallButton}
+            onClick={() => setShowLabels((x) => !x)}
+          >
+            {showLabels ? (
+              <>
+                <Icon icon={"chevronUp"} />
+                <span>Hide Labels</span>
+              </>
+            ) : (
+              <>
+                <Icon icon={"chevronDown"} />
+                <span>Show Labels</span>
+              </>
+            )}
+          </button>
+          <button className={styles.smallButton} onClick={() => reset()}>
+            <Icon icon={"refresh"} />
+            <span>Reset</span>
+          </button>
+        </div>
       </div>
     </div>
   );

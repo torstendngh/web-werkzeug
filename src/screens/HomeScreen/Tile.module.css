@@ -1,5 +1,5 @@
 .tile {
-  border: 1px solid #1e1e1f;
+  border: 1px solid var(--color-gray-5);
   min-width: 256px;
   min-height: 256px;
   border-radius: 16px;
@@ -9,8 +9,8 @@
   cursor: pointer;
   padding: 16px;
   position: relative;
-  transition: border 0.2s ease;
-  background-color: #0f0f10;
+  transition: border 0.2s ease, background-color 0.2s ease;
+  background-color: var(--color-gray-6);
 }
 
 .tile:hover::before {
@@ -39,6 +39,7 @@
 }
 
 .tile:hover {
+  background-color: var(--backgroundColor);
   border: 1px solid var(--borderColor);
 }
 
@@ -78,10 +79,11 @@
   margin-top: auto;
   font-size: 24px;
   font-family: "Inter SemiBold";
-  color: #e3e4e7;
+  color: var(--color-gray-0);
+  margin-bottom: 8px;
 }
 
 .description {
   font-size: 16px;
-  color: #a0a0a3;
+  color: var(--color-gray-1);
 }

@@ -7,7 +7,7 @@ const IconsScreen = () => {
   return (
     <div className={styles.iconsScreen}>
         <div className={styles.titleContainer}>
-            <span className={styles.title}>Icons</span>
+            <span className={styles.title}>✨ Icons</span>
             <span className={styles.description}>Free SVG icon sources</span>
         </div>
         <div className={styles.body}>

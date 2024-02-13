@@ -8,6 +8,7 @@ const Tile = ({ tile, onClick }) => {
     useEffect(() => {
   
       tileRef.current.style.setProperty("--glowColor", `${tile.color}1A`);
+      tileRef.current.style.setProperty("--backgroundColor", `${tile.color}4A`);
       tileRef.current.style.setProperty("--borderColor", `${tile.color}`);
   
       const handleMouseMove = (e) => {

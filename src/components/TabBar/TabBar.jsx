@@ -5,12 +5,14 @@ const TabBar = ({ tabs }) => {
   return (
     <div className={styles.tabBar}>
       <div style={{flex: 1}}></div>
-      {tabs.map((tab, index) => (
-        <Tab
-          key={index}
-          tab={tab}
-        />
-      ))}
+      <div className={styles.tabContainer}>
+        {tabs.map((tab, index) => (
+          <Tab
+            key={index}
+            tab={tab}
+          />
+        ))}
+      </div>
       <div style={{flex: 1}}></div>
     </div>
   );

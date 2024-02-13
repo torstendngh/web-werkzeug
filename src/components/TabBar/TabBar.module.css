@@ -1,8 +1,39 @@
 .tabBar {
   display: flex;
-  padding: 8px 0;
+  gap: 8px;
+  justify-content: flex-start;
+  position: absolute;
+  top: 16px;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.tabContainer {
+  display: flex;
+  padding: 8px;
   gap: 8px;
   overflow-y: hidden;
   overflow-x: auto;
   justify-content: flex-start;
+  border-radius: 1000px;
+  background-color: var(--color-gray-6);
+  border: 1px solid var(--color-gray-4);
+}
+
+@media (max-width: 960px) {
+  .tabBar {
+    display: flex;
+    gap: 0;
+    justify-content: flex-start;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    border-bottom: 1px solid var(--color-gray-4);
+    background-color: var(--color-gray-6);
+  }
+  .tabContainer {
+    border-radius: 0;
+    border: 0;
+  }
 }

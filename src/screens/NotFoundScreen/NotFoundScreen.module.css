@@ -5,5 +5,5 @@
   flex: 1;
   overflow: hidden;
   font-size: 18px;
-  color: #a0a0a3;
+  color: var(--color-gray-1);
 }

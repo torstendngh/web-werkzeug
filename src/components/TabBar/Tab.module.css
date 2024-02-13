@@ -3,9 +3,9 @@
   align-items: center;
   padding: 4px 8px;
   gap: 8px;
-  color: #A0A0A3;
+  color: var(--color-gray-1);
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 1000px;
   font-size: 16px;
   font-family: "Inter Medium";
   padding-right: 24px;
@@ -13,13 +13,13 @@
 }
 
 .tab:hover {
-  background-color: #1E1E1F;
-  color: #E3E4E7;
+  background-color: var(--color-gray-5) !important;
+  color: var(--color-gray-0) !important;
 }
 
 .isSelected {
-  background-color: #1E1E1F !important;
-  color: #E3E4E7 !important;
+  background-color: var(--color-gray-5) !important;
+  color: var(--color-gray-0) !important;
 }
 
 .icon {

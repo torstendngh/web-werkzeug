@@ -1,9 +1,12 @@
 .code {
-  white-space: pre-wrap;
-  background-color: #1e1e1f;
+  white-space: pre;
+  background-color: var(--color-gray-6);
   padding: 16px;
   border-radius: 8px;
-  color: #a0a0a3;
+  color: var(--color-gray-1);
   font-family: "Mono";
   font-size: 14px;
+  word-break: normal;
+  overflow-x: auto;
+  border: 1px solid var(--color-gray-5);
 }

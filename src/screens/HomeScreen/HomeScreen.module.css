@@ -26,11 +26,11 @@
 .title {
   font-size: 32px;
   font-family: "Inter SemiBold";
-  color: #e3e4e7;
+  color: var(--color-gray-0);
 }
 
 .description {
-  color: #a0a0a3;
+  color: var(--color-gray-1);
 }
 
 .grid {
@@ -59,7 +59,8 @@
 }
 
 .profileContainer:hover {
-  background-color: #1e1e1f;
+  background-color: var(--color-gray-6);
+  border: 1px solid var(--color-gray-5);
 }
 
 .profilePic {
@@ -89,7 +90,7 @@
 
 .profileDescription {
   font-size: 16px;
-  color: #a0a0a3;
+  color: var(--color-gray-1);
 }
 
 .profileContainer:hover .profileName {
@@ -97,14 +98,12 @@
 }
 
 .notification {
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) inset;
   min-height: 64px;
   border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px;
-  background-color: #EBA8001A;
   margin-top: 16px;
   gap: 8px;
   font-size: 18px;

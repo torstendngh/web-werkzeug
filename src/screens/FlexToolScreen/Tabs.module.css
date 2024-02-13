@@ -1,11 +1,10 @@
 .tabs {
   display: flex;
-  background-color: #0b0b0c;
+  background-color: var(--color-gray-5);
   border-radius: 8px;
   padding: 4px;
   gap: 4px;
   overflow: auto;
-  border: 1px solid #1e1e1f;
 }
 
 .tab {
@@ -14,18 +13,19 @@
   align-items: center;
   justify-content: center;
   padding: 12px 16px;
-  color: #a0a0a3;
+  color: var(--color-gray-1);
   flex: 1;
   cursor: pointer;
 }
 
 .tab:hover {
-  background-color: #1e1e1f;
+  color: var(--color-gray-0);
+  background-color: var(--color-gray-4);
 }
 
 .isSelected {
-  background-color: #1E1E1F !important;
-  color: #e3e4e7;
+  background-color: var(--color-gray-3) !important;
+  color: var(--color-gray-0);
 }
 
 .tabsContainer {
@@ -36,11 +36,11 @@
 
 .label {
   font-size: 16px;
-  color: #e3e4e7;
+  color: var(--color-gray-1);
   font-family: "Inter SemiBold";
 }
 
 .value{
-  color: #a0a0a3;
+  color: var(--color-gray-2);
   font-family: "Inter";
 }

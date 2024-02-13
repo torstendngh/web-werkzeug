@@ -3,8 +3,10 @@
   flex-direction: column;
   flex: 1;
   padding: 64px 16px;
+  padding-top: 128px;
   gap: 64px;
   overflow: auto;
+  position: relative;
 }
 
 .container {
@@ -19,10 +21,10 @@
 .title {
   font-size: 32px;
   font-family: "Inter SemiBold";
-  color: #e3e4e7;
+  color: var(--color-gray-0);
 }
 
 .description {
-  color: #a0a0a3;
+  color: var(--color-gray-1);
   line-height: 1.5;
 }
