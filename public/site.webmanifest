@@ -1,0 +1,20 @@
+{
+    "name": "WebWerkzeug",
+    "short_name": "WebWerkzeug",
+    "description": "Welcome to webwerkzeug.com – your go-to collection of web development tools and snippets. Designed for web developers by a web developer, this web application aims to streamline your workflow, enhance productivity, and provide quick access to a variety of utilities and code snippets that are essential for modern web development.",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
