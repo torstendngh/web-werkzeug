@@ -1,21 +1,32 @@
 import React from "react";
-import useLocalStorage from "../../hooks/useLocalStorage";
-import Toggle from "../../components/Toggle/Toggle";
-import styles from './SettingsScreen.module.css'
+import styles from "./SettingsScreen.module.css";
+import Icon from "../../components/Icon/Icon";
+import profilePicture from "../../assets/images/torstendngh.jpg";
 
 const SettingsScreen = () => {
-  const [isDarkTheme, setIsDarkTheme] = useLocalStorage(true, "isDarkTheme");
-
-  const handleThemeChange = () => {
-    setIsDarkTheme(!isDarkTheme)
-    window.location.reload();
-  }
-
   return (
     <div className={styles.settingsScreen}>
-      <div className={styles.toggleContainer}>
-        <Toggle onChange={handleThemeChange} value={isDarkTheme}/>
-        Dark Mode
+      <div className={styles.container}>
+        <span className={styles.description}>
+          This is a work in progress project by:
+        </span>
+        <button
+          className={styles.profileContainer}
+          onClick={() =>
+            window.open("https://twitter.com/torstendngh", "_blank")
+          }
+        >
+          <div className={styles.profilePic}>
+            <img src={profilePicture} alt="torstendngh's profile picture" />
+          </div>
+          <div className={styles.profileTextContainer}>
+            <span className={styles.profileName}>@torstendngh</span>
+            <span className={styles.profileDescription}>
+              Software Developer
+            </span>
+          </div>
+          <Icon icon={"openLink"} />
+        </button>
       </div>
     </div>
   );

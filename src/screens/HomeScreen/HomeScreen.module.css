@@ -39,64 +39,6 @@
   grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
 }
 
-.profileContainer {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-top: 16px;
-  cursor: pointer;
-  border: 1px solid transparent;
-  padding: 16px;
-  border-radius: 16px;
-  align-self: flex-start;
-  transition: background-color 0.2s ease;
-}
-
-@media (max-width: 960px) {
-  .profileContainer {
-    align-self: center;
-  }
-}
-
-.profileContainer:hover {
-  background-color: var(--color-gray-6);
-  border: 1px solid var(--color-gray-5);
-}
-
-.profilePic {
-  height: 64px;
-  width: 64px;
-  border-radius: 1000px;
-  overflow: hidden;
-}
-
-.profilePic > img {
-  height: 100%;
-  width: 100%;
-}
-
-.profileTextContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-right: 16px;
-}
-
-.profileName {
-  font-size: 20px;
-  font-family: "Inter Medium";
-}
-
-.profileDescription {
-  font-size: 16px;
-  color: var(--color-gray-1);
-}
-
-.profileContainer:hover .profileName {
-  text-decoration: underline;
-}
-
 .notification {
   min-height: 64px;
   border-radius: 16px;

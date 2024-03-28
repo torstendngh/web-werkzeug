@@ -12,19 +12,9 @@ import TutorialsScreen from "./screens/TutorialsScreen/TutorialsScreen";
 import TutorialScreen from "./screens/TutorialsScreen/TutorialScreen/TutorialScreen";
 import snippetCategories from "./constants/snippets";
 import SettingsScreen from "./screens/SettingsScreen/SettingsScreen";
-import useLocalStorage from "./hooks/useLocalStorage";
+import "./themes/dark.css"
 
 const App = () => {
-  const [isDarkTheme, setIsDarkTheme] = useLocalStorage(true, "isDarkTheme");
-
-  useEffect(() => {
-    if (isDarkTheme) {
-      import("./themes/dark.css")
-    } else {
-      import("./themes/light.css")
-    }
-  }, [isDarkTheme])
-
 
   return (
     <Routes>

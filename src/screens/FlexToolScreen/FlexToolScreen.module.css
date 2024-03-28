@@ -62,19 +62,19 @@
 }
 
 .display > div:nth-child(2) {
-  background-color: #6f33f1;
+  background-color: #8b5cf6;
 }
 
 .display > div:nth-child(3) {
-  background-color: #b92afe;
+  background-color: #a855f7;
 }
 
 .display > div:nth-child(4) {
-  background-color: #e63b64;
+  background-color: #d946ef;
 }
 
 .display > div:nth-child(5) {
-  background-color: #e54d3b;
+  background-color: #ec4899;
 }
 
 @media (max-width: 1100px) {

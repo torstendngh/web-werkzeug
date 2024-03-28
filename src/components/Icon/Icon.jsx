@@ -89,21 +89,18 @@ const Icon = ({ icon, style }) => {
     ),
     toolbox: (
       <svg
-        xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="lucide lucide-package"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="m7.5 4.27 9 5.15" />
-        <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
-        <path d="m3.3 7 8.7 5 8.7-5" />
-        <path d="M12 22V12" />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M12.3988 2.08307C12.2658 2.02518 12.127 1.99848 11.9906 1.9998C11.8505 2.00116 11.713 2.0321 11.5869 2.08919L2.60874 6.07948C2.5809 6.09134 2.55369 6.10442 2.52721 6.11866C2.18417 6.30213 1.98719 6.66292 2.00011 7.03505L2.00011 16.9847C1.9952 17.3148 2.15495 17.6336 2.43465 17.8249C2.49152 17.864 2.55264 17.8973 2.61717 17.9241L11.5941 21.9138C11.7302 21.9743 11.8725 22.0019 12.0123 22.0002C12.1512 21.9984 12.2875 21.9676 12.4125 21.9111L21.3869 17.9224C21.4318 17.9036 21.4751 17.8815 21.5164 17.8566C21.6659 17.7668 21.7849 17.6422 21.8675 17.498C21.9199 17.407 21.9584 17.3069 21.98 17.2007C21.9953 17.126 22.0022 17.0493 22.0001 16.9721V7.02174C22.0018 6.9458 21.9949 6.86903 21.9786 6.79286C21.9537 6.67466 21.908 6.56414 21.8454 6.46536C21.7674 6.34183 21.6653 6.24002 21.5482 6.16344C21.4953 6.12872 21.4389 6.09888 21.3797 6.07456L12.4083 2.08729L12.3988 2.08307ZM20.0001 8.53877L12.4132 11.9107C12.3981 11.9176 12.3829 11.924 12.3675 11.9301C12.2522 11.9757 12.133 11.9984 12.0153 12.0001C11.875 12.0024 11.7321 11.975 11.5954 11.9144L4.00011 8.53877L4.00011 16.3501L12.0002 19.9057L20.0001 16.3502V8.53877ZM5.46216 6.99994L11.9998 4.09433L18.5377 7.00009L12.0001 9.90569L5.46216 6.99994Z"
+          fill="currentColor"
+        />
       </svg>
     ),
     snippets: (
@@ -1952,14 +1949,72 @@ const Icon = ({ icon, style }) => {
       </svg>
     ),
     chevronDown: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-chevron-down"
+      >
+        <path d="m6 9 6 6 6-6" />
+      </svg>
     ),
     chevronUp: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up"><path d="m18 15-6-6-6 6"/></svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-chevron-up"
+      >
+        <path d="m18 15-6-6-6 6" />
+      </svg>
     ),
     arrowLeft: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
-    )
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-arrow-left"
+      >
+        <path d="m12 19-7-7 7-7" />
+        <path d="M19 12H5" />
+      </svg>
+    ),
+    misc: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-square-terminal"
+      >
+        <path d="m7 11 2-2-2-2" />
+        <path d="M11 13h4" />
+        <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+      </svg>
+    ),
   };
 
   const styles = {

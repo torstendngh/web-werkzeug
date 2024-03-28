@@ -3,8 +3,8 @@
   align-items: center;
   padding: 8px 24px;
   gap: 8px;
-  color: #E3E4E7;
-  background-color: #0071e3;
+  color: #f8fafc;
+  background-color: #3b82f6;
   cursor: pointer;
   border-radius: 1000px;
   font-size: 16px;
@@ -17,8 +17,8 @@
 }
 
 .button:active {
-  background-color: #E3E4E7;
-  color: #1E1E1F;
+  background-color: #f8fafc;
+  color: #020617;
   transform: translateY(3px);
 }
 

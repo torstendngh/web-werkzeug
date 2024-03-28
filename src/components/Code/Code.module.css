@@ -1,6 +1,6 @@
 .code {
   white-space: pre;
-  background-color: var(--color-gray-6);
+  background-color: #27272a;
   padding: 16px;
   border-radius: 8px;
   color: var(--color-gray-1);
@@ -8,5 +8,5 @@
   font-size: 14px;
   word-break: normal;
   overflow-x: auto;
-  border: 1px solid var(--color-gray-5);
+  border: 1px solid #3f3f46;
 }
