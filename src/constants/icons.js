@@ -12,9 +12,9 @@ export default [
     {
         title: "Tabler Icons",
         color: "#4299e1",
-        url: "https://tablericons.com/",
+        url: "https://tabler.io/icons",
         icons: ["tablerIcons1", "tablerIcons2", "tablerIcons3"],
-        amount: "1400+",
+        amount: "5200+",
         hasResize: true,
         hasStrokeWidth: true,
         hasColor: true

@@ -226,5 +226,27 @@ const useCursorPosition = () => {
 };`,
       },
     ],
+  },
+  {
+    label: "Other",
+    icon: "misc",
+    color: "#64748b",
+    path: "other",
+    snippets: [
+      {
+        title: ".htaccess",
+        language: "html",
+        description: "When 404 errors occur, especially with React Router, put a file called \".htaccess\" inside the public folder with this content:",
+        code: `<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>`
+      }
+    ]
   }
 ];
